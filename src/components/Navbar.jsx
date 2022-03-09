@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Navbar = () => {
@@ -6,9 +7,9 @@ export const Navbar = () => {
         <Div>
             <div><img src="main.png" alt="mainLogo" /></div>
             <div>
-                <a href="">Home</a>
-                <a href="">Book an Appointment</a>
-                <a href="">Find a Doctor</a>
+                <Link to="/">Home</Link>
+                <Link to="/appointment">Book an Appointment</Link>
+                <Link to="/doctor">Find a Doctor</Link>
             </div>
         </Div>
     )
